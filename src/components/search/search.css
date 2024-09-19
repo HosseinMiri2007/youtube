@@ -1,0 +1,19 @@
+.formDiv {
+  width: 30%;
+  gap: 1rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid;
+  padding: 10px;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchInput {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+

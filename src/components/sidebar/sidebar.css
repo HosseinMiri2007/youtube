@@ -1,0 +1,31 @@
+.sideDiv {
+  display: flex;
+  height: 100vh;
+  padding: 1rem;
+  border-right: 1px solid;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.smallSideDiv p {
+  display: none;
+}
+.smallSideDiv .sideLi {
+  padding: 1rem;
+}
+.sideLi {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 5rem 1rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.sideLi:hover {
+  transition: 0.2s;
+  background-color: #5b5b5b0f;
+}
+
+.sideLi p {
+  font-size: 1rem;
+}
