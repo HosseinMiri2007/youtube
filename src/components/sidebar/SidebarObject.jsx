@@ -1,32 +1,27 @@
 import { CgHome } from "react-icons/cg";
 import { TiLightbulb } from "react-icons/ti";
 import { BiMusic, BiNews } from "react-icons/bi";
-import { BiVideo } from "react-icons/bi";
-import { RiPlayList2Line } from "react-icons/ri";
+import { FaGamepad } from "react-icons/fa";
 const SideItems = [
   {
     name: "Home",
     icon: <CgHome />,
-  },
-  {
-    name: "Shorts",
-    icon: <BiVideo />,
-  },
-  {
-    name: "Subscription",
-    icon: <RiPlayList2Line />,
-  },
-  {
-    name: "Learning",
-    icon: <TiLightbulb />,
+    id: 0,
   },
   {
     name: "Music",
     icon: <BiMusic />,
+    id: 10,
   },
   {
     name: "News",
     icon: <BiNews />,
+    id: 25,
+  },
+  {
+    name: "Gaming",
+    icon: <FaGamepad />,
+    id: 20,
   },
 ];
 

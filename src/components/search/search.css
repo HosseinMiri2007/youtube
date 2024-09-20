@@ -5,6 +5,7 @@
   border-radius: 2rem;
   border: 1px solid;
   padding: 10px;
+  box-shadow: 0px 0px 10px rgba(32, 32, 32, 0.306);
 }
 .form {
   display: flex;

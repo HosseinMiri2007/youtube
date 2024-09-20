@@ -5,6 +5,8 @@ import { useState } from "react";
 
 function App() {
   const [sideVisible, setSideVisible] = useState(true);
+  const [category, setCategory] = useState(0);
+
   return (
     <>
       <div
@@ -20,13 +22,12 @@ function App() {
         <div
           style={{
             display: "flex",
-            gap: "3rem",
           }}
         >
-          <Sidebar sideVisible={sideVisible} />
+          <Sidebar sideVisible={sideVisible} setCategory={setCategory} />
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Feed />} />
+              <Route path="/" element={<Feed category={category}/>} />
             </Routes>
           </BrowserRouter>
         </div>
