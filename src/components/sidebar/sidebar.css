@@ -1,7 +1,7 @@
 .sideDiv {
   display: flex;
   height: 100vh;
-  width: 30%;
+  width: 20%;
   padding: 0.5rem;
   border-right: 1px solid;
   overflow-y: scroll;
@@ -20,10 +20,10 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 10rem 1rem 1rem;
+  padding: 1rem 12rem 1rem 1rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .sideLi:hover {
@@ -32,10 +32,9 @@
 }
 
 .sideLi p {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .activeLi {
-  text-decoration: underline;
-  text-decoration-color: red;
+  border-bottom: 5px solid red;
 }

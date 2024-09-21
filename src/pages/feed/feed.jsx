@@ -8,7 +8,7 @@ const Feed = ({ category }) => {
 
   useEffect(() => {
     fetchApi();
-    // eslint-disable-next-line
+    
   }, [category]);
 
   async function fetchApi() {

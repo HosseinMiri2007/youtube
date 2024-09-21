@@ -7,7 +7,7 @@ const Sidebar = ({ sideVisible, setCategory }) => {
       <ul>
         {SideItems.map((item, i) => (
           <li
-            className={`sideLi ${item[i] === "activeLi"}`}
+            className={`sideLi "activeLi"`}
             key={i}
             onClick={() => setCategory(() => item.id)}
           >

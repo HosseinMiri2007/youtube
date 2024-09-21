@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Feed } from "./pages/exporter/Pexporter";
+import { Feed, Video } from "./pages/exporter/Pexporter";
 import { Navbar, Sidebar } from "./components/exporter/Cexporter";
 import { useState } from "react";
 
@@ -27,7 +27,8 @@ function App() {
           <Sidebar sideVisible={sideVisible} setCategory={setCategory} />
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Feed category={category}/>} />
+              <Route path="/" element={<Feed category={category} />} />
+              <Route path="/video" element={<Video />} />
             </Routes>
           </BrowserRouter>
         </div>
