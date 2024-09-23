@@ -6,7 +6,6 @@ import { useState } from "react";
 function App() {
   const [sideVisible, setSideVisible] = useState(true);
   const [category, setCategory] = useState(0);
-
   return (
     <>
       <div
@@ -28,7 +27,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Feed category={category} />} />
-              <Route path="/video" element={<Video />} />
+              <Route path="/video/:id" element={<Video />} />
             </Routes>
           </BrowserRouter>
         </div>

@@ -1,4 +1,4 @@
-const VideoBox = ({ img, title, subtitle, youtubername, youtubeimg }) => {
+const VideoBox = ({ img, title, subtitle, youtubername }) => {
   return (
     <div className="videoBox_container">
       <div className="videoBox_top">
@@ -12,7 +12,6 @@ const VideoBox = ({ img, title, subtitle, youtubername, youtubeimg }) => {
         </div>
         <div className="videoBox_youtuberInfo">
           <div className="videoBox_youtuber">
-            <img src={youtubeimg} alt="youtubeimage" />
             <h4>{youtubername}</h4>
           </div>
 
