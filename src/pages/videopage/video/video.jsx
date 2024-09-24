@@ -1,16 +1,18 @@
 import "./video.css";
-const Video = ({ id }) => {
+const Video = ({ id, title }) => {
   return (
-    <div>
+    <div
+      className="video_container"
+      style={{ marginTop: "10rem", marginLeft: "2rem" }}
+    >
       <iframe
+        style={{ width: "1080px", height: "480px" }}
         src={`https://www.youtube.com/embed/${id}`}
-        title="The Best VSCode Extensions 2024"
-        frameborder="0"
+        title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
-      <h3>Title</h3>
+      <h3>{title}</h3>
       <h4>description</h4>
     </div>
   );

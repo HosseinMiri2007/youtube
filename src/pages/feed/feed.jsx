@@ -19,18 +19,21 @@ const Feed = ({ category }) => {
       .then(console.log(data))
       .catch((error) => console.error("Error:", error));
   }
-  const { id, videoCategoryId } = useParams();
   return (
     <div className="feed_container">
       <div className="videos_container">
         {data.map((video, i) => {
           return (
-            <Link key={i} to={`video/${video.id}`}>
+            <Link
+              key={i}
+              to={`video/${video.id}/${video.snippet.localized.title}`}
+            >
               <VideoBox
                 img={video.snippet.thumbnails.medium.url}
                 title={video.snippet.localized.title}
                 subtitle={video.subtitle}
                 youtubername={video.snippet.channelTitle}
+                views={video.statistics.viewCount}
               />
             </Link>
           );

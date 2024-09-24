@@ -1,4 +1,4 @@
-const VideoBox = ({ img, title, subtitle, youtubername }) => {
+const VideoBox = ({ img, title, subtitle, youtubername,views }) => {
   return (
     <div className="videoBox_container">
       <div className="videoBox_top">
@@ -16,7 +16,7 @@ const VideoBox = ({ img, title, subtitle, youtubername }) => {
           </div>
 
           <div className="videoBox_view">
-            <h4>7.5M Views</h4>
+            <h4>{`${views} Views`}</h4>
           </div>
         </div>
       </div>

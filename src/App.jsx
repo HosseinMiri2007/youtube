@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Feed, Video } from "./pages/exporter/Pexporter";
+import { Feed, VideoPage } from "./pages/exporter/Pexporter";
 import { Navbar, Sidebar } from "./components/exporter/Cexporter";
 import { useState } from "react";
 
@@ -27,7 +27,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Feed category={category} />} />
-              <Route path="/video/:id" element={<Video />} />
+              <Route path="/video/:id/:title" element={<VideoPage />} />
             </Routes>
           </BrowserRouter>
         </div>
