@@ -19,6 +19,13 @@ const Feed = ({ category }) => {
       .then(console.log(data))
       .catch((error) => console.error("Error:", error));
   }
+  function viewCounter(view) {
+    if (view > 1000000) {
+      return Math.floor(view / 1000000) + "M";
+    } else if (view > 1000) {
+      return Math.floor(view / 1000) + "K";
+    }
+  }
   return (
     <div className="feed_container">
       <div className="videos_container">
@@ -33,7 +40,7 @@ const Feed = ({ category }) => {
                 title={video.snippet.localized.title}
                 subtitle={video.subtitle}
                 youtubername={video.snippet.channelTitle}
-                views={video.statistics.viewCount}
+                views={viewCounter(video.statistics.viewCount)}
               />
             </Link>
           );
