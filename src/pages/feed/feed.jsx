@@ -34,6 +34,7 @@ const Feed = ({ category }) => {
             <Link
               key={i}
               to={`video/${video.id}/${video.snippet.localized.title}`}
+              style={{color:"black"}}
             >
               <VideoBox
                 img={video.snippet.thumbnails.medium.url}
